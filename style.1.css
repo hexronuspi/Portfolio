@@ -1,0 +1,149 @@
+header{
+	position: relative;
+	top: 0;
+	width: 75%;
+	padding: 15px 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+.right{
+	text-align: right;
+
+}
+.explorehead {
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 10%;
+    font-size: 15px;
+    color: #000000;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+
+header .logo{
+	position: realtive;
+	font-size: 40px;
+	color: #2D033B;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .navigation a{
+	color: #000000;
+    background: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	margin: 10px;
+	letter-spacing: 1px;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition:0.3s;
+	transition-property: background;
+}
+
+header .nav_contact a{
+	color: #ffffff;
+    background: #000000;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	margin: 10px;
+	letter-spacing: 1px;
+	padding: 8px 15px;
+	border-radius: 50px;
+	border-width: 1px;
+	border-color: #000000;
+	transition:0.3s;
+	transition-property: nav;
+}
+header .navigation a:not(:last-child){
+	margin-right: 30px;
+}
+
+header .navigation a:hover{
+	background: #000000;
+	color: #ffffff;
+}
+
+.content{
+	max-width: 630px;
+	margin: 58px 90px;
+}
+
+.content .info h2{
+	color: #000000;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+	line-height: 10px;
+	margin-bottom: 10px;
+}
+
+.media-icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.media-icons a{
+	position: relative;
+	color: #111;
+	font-size: 25px;
+	transition: 0.2s;
+	transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+	margin-right: 40px;
+}
+
+.media-icons a:hover{
+	transform: scale(1.5);
+}
+
+body{
+	background-image: url(logo.png);
+}
+
+  
+  input {
+      position: center;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      margin: 10px;
+      width: calc(100% - 20px);
+      background-color: none;
+  }
+  a {
+    color: rgb(216, 70, 70);
+    position: center;
+    bottom: 60px;
+    left: 18px;
+    z-index: 105;
+  }
+
+  canvas {
+    display: block;
+    position: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: 'Bangers', cursive;
+    background: #e4282b;
+  }
