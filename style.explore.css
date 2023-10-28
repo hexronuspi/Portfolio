@@ -123,7 +123,7 @@ header .navigation a:hover{
 }
 
 .content .info h2{
-	color: #4000ff;
+	color: rgb(0, 0, 0);
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 800;

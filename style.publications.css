@@ -1,3 +1,4 @@
+
 header{
 	position: relative;
 	top: 0;
@@ -9,25 +10,65 @@ header{
 	color: white;
 }
 
-p{
+p {
 	font-family: 'Roboto', sans-serif;
 }
-.right{
-	text-align: right;
 
+
+
+.exploreheadp{
+	top: 0;
+    left: 0;
+    width: 600%;
+    height: 10%;
+    font-size: 15px;
+    color: #000000;
+    padding: 0px;
+    background-color: #ffffff;
 }
+
+
+
 .explorehead {
     top: 0;
     left: 0;
-    width: 70%;
+    width: 50%;
     height: 10%;
     font-size: 15px;
     color: #000000;
     padding: 20px;
     background-color: #ffffff;
   }
+  .collapsiblep {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+	background-color: #ebebeb;
+  }
 
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsiblep:hover {
+	background-color: #ebebeb;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .contentp {
+		padding: 0 18px;
+		background-color: rgb(202, 202, 202);
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
 
+  }
 header .logo{
 	position: realtive;
 	font-size: 40px;
@@ -82,7 +123,7 @@ header .navigation a:hover{
 }
 
 .content .info h2{
-	color: #000000;
+	color: rgb(0, 0, 0);
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -119,8 +160,7 @@ body{
 	background-image: url(logo.png);
 }
 
-
-
+  
   input {
       position: center;
       z-index: 100;
