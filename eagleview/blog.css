@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+html, body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.centered {
+  position: absolute;
+  top:50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container  {
+  width: 600px;
+  height: 200px;
+  border: 1px solid lightgray;
+  border-top: 2px solid black;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.25);
+  text-align: center; 
+  padding: 40px 10px 0px 10px;
+  
+  .subTitle {
+    color: lightgray;
+    margin-top: -10px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  
+  #email {
+    width: 240px;
+    padding: 10px;
+    font-size: .65em;
+    letter-spacing: 1px;
+    border:1px solid lightgray;
+  }
+  
+  button {
+    background: black;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    height: 33px;
+    font-size: .65em;
+    margin-left: 5px;
+    &:hover {
+      color: pink;
+    }
+  }
+  
+}

@@ -1,0 +1,346 @@
+/* BASE STYLING */
+:root {
+  --col-bg: 10,10,10;
+  --col-fg-p: 99,102,241;
+  --col-fg-s: 184,171,143;
+  --col-text: 220,220,220;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  font-family: system-ui;
+  overflow: hidden;
+}
+
+.bname {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-variant: all-small-caps;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* PEN CONTENT STYLING */
+
+.body-background {
+  isolation: isolate;
+  position: absolute;
+  filter: blur(10vh);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circle {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.circle-1 {
+  background: rgb(113, 255, 220);
+  animation: 6s move-circle-1 linear infinite;
+  top: 30%;
+  left: 50%;
+}
+
+.circle-2 {
+  background: rgb(139, 174, 255);
+  animation: 5s move-circle-2 linear infinite;
+  left: 40%;
+  top: 40%;
+}
+
+.circle-3 {
+  width: 70vh;
+  height: 70vh;
+  background: rgb(143, 192, 255);
+  animation: 15s move-circle-3 linear infinite;
+  left: 30%;
+  top: 10%;
+}
+
+.circle-4 {
+  width: 100vh;
+  height: 100vh;
+  background: rgb(167, 242, 255);
+  animation: 8s move-circle-4 linear infinite;
+  left: 80%;
+  top: 20%;
+  filter: blur(15vh);
+}
+
+.content {
+  text-align: center;
+}
+
+@keyframes move-circle-1 {
+  0%{
+    transform:rotate(0deg)
+              translate(-15vh)
+              rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-15vh)
+              rotate(-360deg);
+  }
+}
+
+@keyframes move-circle-2 {
+  0%{
+    transform:rotate(0deg)
+              translate(-5vh)
+              rotate(0deg);
+  }
+  100%{
+    transform:rotate(-360deg)
+              translate(-5vh)
+              rotate(360deg);
+  }
+}
+
+
+@keyframes move-circle-3 {
+  0%{
+    transform:rotate(0deg)
+              translate(-5vh)
+              rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-5vh)
+              rotate(-360deg);
+  }
+}
+
+@keyframes move-circle-4 {
+  0%{
+    transform:rotate(0deg)
+              translate(-10vh)
+              rotate(0deg);
+  }
+  100%{
+    transform:rotate(-360deg)
+              translate(-10vh)
+              rotate(360deg);
+  }
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
+  right: 0;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #171717;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #818181;
+}
+
+
+
+.pf-sticky-section ul {
+  list-style: none;
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.pf-sticky-section .social {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 1.5%;
+}
+
+.pf-sticky-section .social a {
+  height: 40px;
+  width: 40px;
+  border-radius: 15px;
+  background-color: #ffffff82;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 10px;  
+}
+
+  
+.pf-sticky-section .social .home {
+  background-color: #ffffffc3;
+}
+.pf-sticky-section .social .github {
+  background-color: #ffffff2e;
+}
+
+.pf-sticky-section .social .pypi {
+  background-color: rgba(232, 232, 232, 0.496)
+}
+
+
+.pf-sticky-section .social a svg {
+  fill: #6a6a6a;
+  transition: transform 200ms ease-in-out;
+  z-index: 2;
+}
+
+.pf-sticky-section .social a::before {
+  content: attr(data-text);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #1313139c;
+  position: absolute;
+  top: -55%;
+  right: 50%;
+  transform: translateX(50%) rotate3d(300, 0, 0, -90deg);
+  padding: 3px 5px 6px 5px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    55% 90%,
+    50% 100%,
+    45% 90%,
+    0% 90%
+  );
+  transition: transform 200ms ease-in-out;
+  transform-origin: bottom;
+}
+
+
+.pf-sticky-section .social a::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #acacac8f;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: transform 200ms ease-in-out;
+  transform-origin: bottom;
+  clip-path: circle(0% at 50% 100%);
+  border-radius: 10px;
+  transition: clip-path 250ms ease-in-out;
+}
+
+.pf-sticky-section .social a:hover::after {
+  clip-path: circle(100%);
+}
+
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pf-sticky-section {
+  width: 40%;
+  height: 8%;
+  position: fixed;
+  align-items: center;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0  );
+  border-radius: 20px;
+  z-index: 9;
+  padding: 0 10px;
+  background: rgba(216, 216, 216, 0.196);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(26, 26, 26, 0.297);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(173, 173, 173, 0.112);
+}
+@media (max-width: 1000px) {
+  .pf-sticky-section {
+    display: none; /* Hide the sticky section on mobile */
+  }
+}
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #2d2d2d;
+  font-weight: bold;
+  font-size: 30px;
+  animation: fade-in 1s ease-in-out;
+  position: absolute;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+ overscroll-behavior: none;
+}
+

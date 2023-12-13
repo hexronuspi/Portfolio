@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>eagleview</title>
+    <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+    
+    <section class="docs-section" id="top">
+
+        <header class="docs-header">
+            <h1><a href="index.html">eagleview</a> - docs</h1>
+            <p>Explore the eagleview documentation to do dataset Visualisation in minimal lines of code. </p>
+        </header>
+    
+        <div class="docs-container">
+    
+            <nav class="docs-navigation">
+                <h2>Version 0.1</h2>
+    
+                <ul class="navigation" id="docs-nav"></ul>
+    
+            </nav>
+    
+             <div class="docs-content">
+    
+    
+                <h2>Info </h2>
+    
+                <ul>
+                    <li><strong>Item Name : </strong>eagleview</li>
+                    <li><strong>Item Version : </strong> 0.1</li>
+                    <li><strong>Item URL : </strong> <a href="https://pypi.org/project/eagleview/">https://pypi.org/project/eagleview/</a>
+                    </li>
+                    <li><strong>Last Updated : </strong> 12 Dec 2023</li>
+                    <li><strong>Author : </strong> <a href="https://github.com/hexronuspi" target="_blank">Aditya Raj</a></li>
+    
+                </ul>
+    
+    
+                <h2>Overview </h2>
+    
+                <p><strong>eagleview</strong>&nbsp;is meant to provide easy visualisation of datasets, related to images.<br>
+                    It is a package for easy installation, customization, and visualisation of images.&nbsp;</p>
+                <p><b>It is available as a pypi project</b>&nbsp;hence it needs to be installed manually, either by cloning the repository on GitHub or using the `pip` command.</p>
+                <h2>The structure</h2>
+                <h3>Python</h3>
+                <p></p>
+                1. Display image number has maximum limit of matrix size.
+                <pre>
+                    <code class="language-python">
+                    !pip install eagleview
+
+                    import eagleview
+
+                    from eagleview.figshow import ImageMatrix
+                    
+                    image_display = ImageMatrix('/content/path_to_folder_containing_images')
+                    image_display.display_image((2, 3), False)
+                    </code></pre>
+                    2. Display image number has no maximum limit and prints all images adding extra rows(number of column does not change).
+                    <pre><code class="language-python">
+                        !pip install eagleview
+    
+                        import eagleview
+                        
+                        from eagleview.figshow import ImageMatrix
+                        
+                        image_display = ImageMatrix('/content/path_to_folder_containing_images')
+                        image_display.display_image((2, 3), True)
+                      # image_display.display_image((2, 3))
+                        </code></pre>
+
+            <h2>Quick install</h2>
+                <ol>
+                    <li>Clone the GitHub repository.</li>
+                    <pre><code class="language-python">
+                        !git clone https://github.com/hexronuspi/eagleview
+                        %cd eagleview
+                        !pip install .
+                    </code></pre>
+               
+                    <li>Use the PyPi project to directly import the files.</li>
+                    <pre><code class="language-py">
+                        !pip install eagleview
+                        import eagleview
+                    </code></pre>
+               
+                </ol>
+                After the package is successfully installed and imported it in your project, just run:
+                <pre><code class="language-py">
+                    from eagleview.figshow import ImageMatrix
+
+                    image_display = ImageMatrix('/content/path_to_folder_containing_images')
+                    image_display.display_image((2, 3), False)
+                </code></pre>
+                <h2>Options</h2>
+                <h3>Display</h3>
+                <p>There are two display effects that you can use, restricted: which will not display more images than the size of matrix, and un-restricted: which will display all the images in the folder by adding more rows and preserving the columns. 
+                    </p>
+                    1. Display image number has maximum limit of matrix size.
+                    <pre>
+                        <code class="language-python">
+                       
+                        image_display.display_image((2, 3), False)
+                        </code></pre>
+                        2. Display image number has no maximum limit and prints all images adding extra rows(number of column does not change).
+                        <pre><code class="language-python">
+                           
+                            image_display.display_image((2, 3), True)
+                        </code></pre>
+                        <pre><code class="language-python"></code>
+                            image_display.display_image((2, 3))
+                            </code></pre>
+    
+               
+              
+                <h2>Additional Notes:</h2>
+                <h4>Folder containing images</h4>
+                <p>If you have a compressed folder containing images, extract them and then run the code.<br>
+                    </p>
+                <h3>Use GitHub cloning method</h3>
+                <p>The package version will be one version behind Github version for stable and smooth operating, for using the most recent beta test version, clone the GitHub repository and execute the program.</p>
+                <h2>Release Notes</h2>
+                <b>= 0.1 = </b>
+                <ul>
+                    <li>Initail Release</li>
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+    
+    </section>
+  </body>
+  
+    <script src="docs.js"></script>
+    <footer>
+        <div class="pf-sticky-section">
+          
+           <div class="social">
+
+            <a data-text="home" href="index.html" target="_blank" class="home"> 
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="32px" height="32px"><path d="M 16.105469 2.5351562 C 15.649335 2.5315682 15.193947 2.6430484 14.791016 2.8710938 C 12.204135 4.3291982 9.3582739 6.0810231 6.3964844 7.7871094 A 1.0001 1.0001 0 0 0 6.390625 7.7910156 C 4.934111 8.6442641 3.7537333 9.984391 3.5507812 11.599609 A 1.0001 1.0001 0 0 0 3.5507812 11.601562 C 3.070352 15.475925 3.2819546 19.358573 4.1835938 23.226562 A 1.0001 1.0001 0 0 0 4.1894531 23.246094 C 4.4585727 24.308167 5.1073155 25.27809 5.9121094 26.095703 C 6.7169032 26.913317 7.6791299 27.579013 8.7421875 27.863281 A 1.0001 1.0001 0 0 0 8.7617188 27.869141 C 13.579059 29.056186 18.420941 29.056186 23.238281 27.869141 A 1.0001 1.0001 0 0 0 23.257812 27.863281 C 24.320871 27.579013 25.283157 26.913542 26.087891 26.095703 C 26.892624 25.277864 27.542058 24.306963 27.810547 23.244141 A 1.0001 1.0001 0 0 0 27.814453 23.226562 C 28.718163 19.352345 28.930776 15.464439 28.447266 11.583984 A 1.0001 1.0001 0 0 0 28.445312 11.582031 C 28.242468 9.9798449 27.07737 8.6471954 25.634766 7.7910156 A 1.0001 1.0001 0 0 0 25.628906 7.7871094 C 22.732857 6.095988 19.951052 4.355459 17.417969 2.8886719 C 17.01807 2.6566693 16.561603 2.5387444 16.105469 2.5351562 z M 16.091797 4.5097656 C 16.190422 4.5107078 16.289962 4.5471445 16.414062 4.6191406 C 18.902981 6.0603535 21.691183 7.8027971 24.621094 9.5136719 C 25.63428 10.117407 26.372813 11.145633 26.460938 11.832031 C 26.91478 15.474383 26.718353 19.107322 25.869141 22.755859 C 25.727048 23.31585 25.268911 24.076675 24.662109 24.693359 C 24.055311 25.31004 23.303878 25.779371 22.744141 25.929688 C 21.997265 26.11325 21.253393 26.082382 20.507812 26.205078 C 20.945272 23.683317 20.958002 21.066257 20.421875 18.570312 A 1.0001 1.0001 0 0 0 20.396484 18.341797 A 1.0001 1.0001 0 0 0 20.375 18.261719 A 1.0001 1.0001 0 0 0 20.371094 18.246094 A 1.0001 1.0001 0 0 0 20.363281 18.222656 A 1.0001 1.0001 0 0 0 20.355469 18.203125 A 1.0001 1.0001 0 0 0 20.324219 18.130859 A 1.0001 1.0001 0 0 0 20.277344 18.042969 A 1.0001 1.0001 0 0 0 19.386719 17.550781 C 17.224714 16.610059 14.8144 16.617036 12.652344 17.554688 A 1.0001 1.0001 0 0 0 11.603516 18.341797 C 11.602316 18.346897 11.602764 18.352322 11.601562 18.357422 A 1.0001 1.0001 0 0 0 11.578125 18.564453 A 1.0001 1.0001 0 0 0 11.578125 18.568359 C 11.04162 21.064863 11.054622 23.68268 11.492188 26.205078 C 10.746607 26.082382 10.002735 26.113247 9.2558594 25.929688 C 8.6960893 25.779394 7.9448786 25.310016 7.3378906 24.693359 C 6.7320554 24.077874 6.2742554 23.319202 6.1308594 22.759766 C 5.2833441 19.117002 5.0844626 15.486039 5.5351562 11.849609 L 5.5351562 11.847656 C 5.623024 11.154921 6.3775335 10.115977 7.4023438 9.515625 C 10.394786 7.7916807 13.239164 6.0397011 15.773438 4.6113281 A 1.0001 1.0001 0 0 0 15.775391 4.6113281 C 15.895459 4.5433734 15.993171 4.5088235 16.091797 4.5097656 z M 16 18.744141 C 16.858834 18.742541 17.69746 19.001507 18.505859 19.339844 C 18.957083 21.671327 18.962039 24.134409 18.478516 26.455078 C 16.827372 26.604628 15.172628 26.604628 13.521484 26.455078 C 13.038759 24.138253 13.043261 21.679682 13.492188 19.351562 C 14.299845 19.009047 15.139857 18.745697 16 18.744141 z"/></svg></a> 
+
+
+
+             <a data-text="github" href="https://github.com/hexronuspi/eagleview/" target="_blank" class="github"> 
+              <?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" width="30px" height="30px"><path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>  </a> 
+            
+              <a data-text="pypi" href="https://pypi.org/project/eagleview/" target="_blank" class="pypi"> 
+               
+                <?xml version="1.0" encoding="iso-8859-1"?>
+  <!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  <svg version="1.1" baseProfile="basic" id="&#x421;&#x43B;&#x43E;&#x439;_1"
+       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+       xml:space="preserve">
+  <g>
+      <polygon points="1.11,10.22 1,17.5 1,10.16 	"/>
+  </g>
+  <g>
+      <path d="M5,12.23v7.57l-0.73,0.28l-0.2,0.07l-2.52-1.26C1.21,18.72,1,18.38,1,18v-0.5l0.11-7.28L3,11.2L5,12.23z"/>
+      <path d="M9,20.45L9.021,24L5.55,21.89c-0.05-0.02-0.1-0.05-0.14-0.1l0.71-0.26l1.81-0.68L9,20.45z"/>
+      <path d="M21,7.06l-2,0.66V11c0,0.08-0.01,0.16-0.03,0.23c-0.02,0.07-0.05,0.15-0.08,0.21c-0.04,0.09-0.09,0.17-0.16,0.24
+          c-0.03,0.03-0.07,0.07-0.11,0.1c-0.07,0.06-0.15,0.11-0.23,0.14c-0.01,0.01-0.03,0.01-0.04,0.02L11,14.69V24l7.35-3.06
+          C18.74,20.79,19,20.42,19,20v-3.8l3.35-1.26C22.74,14.79,23,14.42,23,14V6.39L21,7.06z M17,19.31l-0.06,0.02
+          C16.81,19.72,16.43,20,16,20c-0.18,0-0.35-0.05-0.49-0.13C15.21,19.7,15,19.37,15,19c0-0.55,0.45-1,1-1s1,0.45,1,1V19.31z"/>
+      <path d="M17,19v0.31l-0.06,0.02C16.98,19.23,17,19.12,17,19z"/>
+      <polygon points="9,6.62 9,9.32 6.05,10.53 4.39,9.67 2.65,8.77 2,8.43 5,7.31 5,4.62 	"/>
+      <path d="M17.82,1.79l-0.6,0.24l-1.88,0.76l-5.3,2.12L8.49,4.13l-2-1L6.05,2.91l7.6-2.85c0.26-0.09,0.55-0.08,0.8,0.05L17.82,1.79z"
+          />
+      <path d="M11,6.68V10c0,0.07-0.01,0.14-0.02,0.2c-0.01,0.06-0.03,0.12-0.06,0.18c-0.1,0.24-0.29,0.44-0.53,0.54l-0.01,0.01L7,12.3
+          v6.75l2-0.75V14c0-0.42,0.26-0.79,0.65-0.94L17,10.3V4.28L11,6.68z M13,9c-0.55,0-1-0.45-1-1s0.45-1,1-1s1,0.45,1,1S13.55,9,13,9z"
+          />
+  </g>
+  <g>
+      <polygon points="22.09,4.58 20.74,5.03 19.16,5.56 19,5.61 19,3.32 19.19,3.4 	"/>
+  </g>
+  </svg>  </a> 
+  
+  
+  <a data-text="colab" href="https://colab.research.google.com/drive/1ZklXjCLbrZIACctPS4EKZ4ZnuqdjonO4?usp=sharing" target="_blank" class="colab"> 
+    <?xml version="1.0" encoding="iso-8859-1"?>
+    <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" baseProfile="basic" id="Layer_1"
+       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+       xml:space="preserve">
+    <path style="fill:#FFB300;" d="M33.5,10C26.044,10,20,16.044,20,23.5C20,30.956,26.044,37,33.5,37S47,30.956,47,23.5
+      C47,16.044,40.956,10,33.5,10z M33.5,30c-3.59,0-6.5-2.91-6.5-6.5s2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5S37.09,30,33.5,30z"/>
+    <path style="fill:#FFB300;" d="M19.14,28.051l0-0.003C17.96,29.252,16.318,30,14.5,30C10.91,30,8,27.09,8,23.5s2.91-6.5,6.5-6.5
+      c1.83,0,3.481,0.759,4.662,1.976l3.75-6.024C20.604,11.109,17.683,10,14.5,10C7.044,10,1,16.044,1,23.5C1,30.956,7.044,37,14.5,37
+      c3.164,0,6.067-1.097,8.369-2.919L19.14,28.051z"/>
+    <path style="fill:#F57C00;" d="M8,23.5c0-1.787,0.722-3.405,1.889-4.58l-4.855-5.038C2.546,16.33,1,19.733,1,23.5
+      c0,3.749,1.53,7.14,3.998,9.586l4.934-4.964C8.74,26.944,8,25.309,8,23.5z"/>
+    <path style="fill:#F57C00;" d="M38.13,18.941C39.285,20.114,40,21.723,40,23.5c0,3.59-2.91,6.5-6.5,6.5
+      c-1.826,0-3.474-0.755-4.655-1.968l-4.999,4.895C26.298,35.437,29.714,37,33.5,37C40.956,37,47,30.956,47,23.5
+      c0-3.684-1.479-7.019-3.871-9.455L38.13,18.941z"/>
+    </svg> </a> 
+              
+            </footer>
+  
+</html>
